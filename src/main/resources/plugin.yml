@@ -1,0 +1,79 @@
+name: DonutCore
+version: ${version}
+main: hu.donut.core.DonutCore
+api-version: "1.21"
+description: DonutSMP-stílusú core plugin (economy, shards, sell, shop, ah, orders, team, bounty, rtp, tpa...)
+authors: [Donut]
+
+commands:
+  balance:
+    aliases: [bal, money]
+    description: Egyenleg megtekintése
+  pay:
+    description: Pénz küldése
+  baltop:
+    description: Leggazdagabb játékosok
+  shards:
+    description: Shard egyenleg
+  eco:
+    description: Admin economy parancs
+    permission: donutcore.admin
+  bounty:
+    description: Fejpénz
+  stats:
+    description: Statisztikák
+  top:
+    description: Ranglisták
+  donutcore:
+    description: Admin parancsok
+    permission: donutcore.admin
+  sell:
+    description: Tárgyak eladása
+  sellhand:
+    description: Kézben lévő tárgy eladása
+  shop:
+    description: Bolt
+  shardshop:
+    description: Shard bolt
+  ah:
+    aliases: [auction, auctionhouse]
+    description: Aukciósház
+  orders:
+    aliases: [order]
+    description: Megrendelések
+  spawn:
+    description: Teleport a spawnra
+  setspawn:
+    description: Spawn beállítása
+    permission: donutcore.admin
+  rtp:
+    description: Random teleport
+  tpa:
+    description: Teleport kérés
+  tpahere:
+    description: Teleport kérés magadhoz
+  tpaccept:
+    aliases: [tpyes]
+    description: Teleport kérés elfogadása
+  tpdeny:
+    aliases: [tpno]
+    description: Teleport kérés elutasítása
+  sethome:
+    description: Otthon beállítása
+  home:
+    description: Otthonra teleport
+  delhome:
+    description: Otthon törlése
+  afk:
+    description: AFK területre teleport
+  team:
+    aliases: [t, clan]
+    description: Csapat parancsok
+
+permissions:
+  donutcore.admin:
+    default: op
+  donutcore.bypass.warmup:
+    default: op
+  donutcore.homes.unlimited:
+    default: op

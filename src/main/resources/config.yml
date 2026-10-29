@@ -1,0 +1,173 @@
+# DonutCore config
+
+start-money: 1000
+teleport-warmup: 3          # másodperc (donutcore.bypass.warmup = 0)
+homes-max: 3
+team-max-members: 8
+combat-seconds: 20
+kill-shards: 1              # ennyi shard jár egy gyilkosságért
+bounty-min: 1000
+ah:
+  tax: 0.05                 # 5% adó eladáskor
+  hours: 48                 # hirdetés élettartama
+  max-listings: 10
+orders:
+  max-orders: 5
+
+rtp:
+  min: 500
+  max: 5000
+  center-x: 0
+  center-z: 0
+
+afk:
+  shards-per-minute: 1
+  radius: 15
+  # location: /donutcore setafk paranccsal állítható
+
+# Ezek a parancsok le vannak tiltva harc közben
+combat-blocked-commands: [spawn, rtp, tpa, tpahere, tpaccept, home, afk, sethome]
+
+# ---------------------------------------------------------------
+# /sell árak (1 db ára)
+# ---------------------------------------------------------------
+sell-prices:
+  COAL: 10
+  RAW_IRON: 20
+  IRON_INGOT: 40
+  RAW_GOLD: 45
+  GOLD_INGOT: 90
+  RAW_COPPER: 6
+  COPPER_INGOT: 12
+  REDSTONE: 8
+  LAPIS_LAZULI: 12
+  DIAMOND: 500
+  EMERALD: 300
+  QUARTZ: 15
+  NETHERITE_SCRAP: 1500
+  NETHERITE_INGOT: 7000
+  ANCIENT_DEBRIS: 1500
+  COBBLESTONE: 1
+  STONE: 2
+  DEEPSLATE: 2
+  DIRT: 1
+  SAND: 2
+  GRAVEL: 2
+  OAK_LOG: 6
+  SPRUCE_LOG: 6
+  BIRCH_LOG: 6
+  JUNGLE_LOG: 6
+  ACACIA_LOG: 6
+  DARK_OAK_LOG: 6
+  CHERRY_LOG: 6
+  WHEAT: 5
+  CARROT: 4
+  POTATO: 4
+  BEETROOT: 4
+  SUGAR_CANE: 4
+  PUMPKIN: 6
+  MELON_SLICE: 2
+  NETHER_WART: 8
+  BONE: 8
+  STRING: 6
+  GUNPOWDER: 15
+  ROTTEN_FLESH: 2
+  SPIDER_EYE: 6
+  ENDER_PEARL: 60
+  BLAZE_ROD: 50
+  GHAST_TEAR: 150
+  SLIME_BALL: 20
+  LEATHER: 8
+  FEATHER: 3
+  ARROW: 2
+  OBSIDIAN: 25
+  SHULKER_SHELL: 400
+  NETHER_STAR: 25000
+  TOTEM_OF_UNDYING: 8000
+  GOLDEN_APPLE: 600
+  ENCHANTED_GOLDEN_APPLE: 20000
+
+# ---------------------------------------------------------------
+# /shop (pénzért)  –  kategória -> tárgyak (ár / db)
+# ---------------------------------------------------------------
+shop:
+  categories:
+    blocks:
+      icon: GRASS_BLOCK
+      name: "<green>Blokkok"
+      items:
+        STONE: 10
+        COBBLESTONE: 6
+        OAK_LOG: 30
+        OAK_PLANKS: 8
+        GLASS: 12
+        SAND: 10
+        DIRT: 5
+        OBSIDIAN: 200
+        TNT: 400
+    food:
+      icon: COOKED_BEEF
+      name: "<gold>Étel"
+      items:
+        COOKED_BEEF: 25
+        BREAD: 15
+        GOLDEN_CARROT: 60
+        GOLDEN_APPLE: 3000
+    gear:
+      icon: DIAMOND_SWORD
+      name: "<aqua>Felszerelés"
+      items:
+        IRON_SWORD: 300
+        IRON_PICKAXE: 400
+        DIAMOND_SWORD: 2500
+        DIAMOND_PICKAXE: 3000
+        BOW: 350
+        ARROW: 15
+        SHIELD: 400
+        ENDER_PEARL: 400
+    ores:
+      icon: DIAMOND
+      name: "<aqua>Ércek"
+      items:
+        IRON_INGOT: 150
+        GOLD_INGOT: 300
+        DIAMOND: 2500
+        EMERALD: 1500
+        REDSTONE: 40
+        COAL: 40
+    misc:
+      icon: ENDER_CHEST
+      name: "<light_purple>Egyéb"
+      items:
+        EXPERIENCE_BOTTLE: 250
+        ENDER_CHEST: 3000
+        SHULKER_BOX: 20000
+        ELYTRA: 150000
+
+# ---------------------------------------------------------------
+# /shardshop (shardért)
+# ---------------------------------------------------------------
+shardshop:
+  categories:
+    items:
+      icon: NETHER_STAR
+      name: "<aqua>Shard tárgyak"
+      items:
+        ENCHANTED_GOLDEN_APPLE: 150
+        TOTEM_OF_UNDYING: 100
+        NETHERITE_INGOT: 300
+        ELYTRA: 600
+        BEACON: 800
+        SPAWNER: 1500
+        DRAGON_EGG: 5000
+    gear:
+      icon: NETHERITE_SWORD
+      name: "<gold>Felszerelés"
+      items:
+        NETHERITE_SWORD: 500
+        NETHERITE_PICKAXE: 500
+        NETHERITE_HELMET: 450
+        NETHERITE_CHESTPLATE: 700
+        NETHERITE_LEGGINGS: 600
+        NETHERITE_BOOTS: 400
+        MACE: 900
